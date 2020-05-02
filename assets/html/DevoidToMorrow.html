@@ -1,0 +1,866 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../highlight/styles/a11y-dark.css">
+		<script src="../../highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		
+	</head>
+	<body class="is-preload">
+	
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="../../index.html">Etusivulle</a></li>
+					
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../../images/Devoidlogo.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+							<br><br>
+								<h1><strong>Devoid to morrow</strong></h1>
+							</header>
+							<p>Toimin projektissa koodarina.</a></p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+
+			<!-- Johdanto -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>Johdanto</h2>
+
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p>Devoid to morrow on tiimini ticorporate 2020 peliprojekti. käyn läpi minun osuuttani projektissa. Kerron suurimmat haasteet, mikä onnistui, mikä ei ja näytän
+						mitä olen projektiin tuottanut. Tulette näkemään koodia tärkemmistä toiminnallisuuksista, lyhyitä selityksiä toiminnalisuuksista ja kehityskaareni projektin 
+						aikana.
+						</p>
+						<p>
+						Pääpriotiteettinani projektissa oli tehdä toimiva vuoropohajinen taistelu systeemi, skillien luonti ja taiselijoiden luonti työkalut. Tein myös muita pienempiä hommia, kuten animaatioden ja animaattoreiden kanssa säätämistä,
+						mutta niitä en tule käymään lävitse.
+						</p>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Oppimistavoitteet -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Oppiminen projektin aikana</h2>
+
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p>Minulla oli unitystä aikaisenmpaa kokemusta vain yhden kurssin verran, joten suurin osa asijoista tuli täysin uutena, siksi oli vaikea määritellä mitä osa-aluetta haluaa kehittää. Tavoitteenani oli oppa c# kieltä laajaalaisemmin, Unityn ominaisuuksien käyttöä, ja projektitiimissä toimimista. Tärkein tavoitteeni
+						oli kehittyä ohjelmoijana yleisesti, koska en tähtää vain pelialalle vaan, myös web-ohjelmointi kiinnostaa.
+
+						</p>
+						<p>
+						Mielestäni pääsin erittäin hyvin oppimistavoitteisiinin, jotka olin iteslleni asettanut ja ajattelenkin, että Oppimistani taidoista tulee olemaan varmasti hyötyä myöhemmissä projekteissani. Listaan tähän alle tärkeimmät asiat mitä olen oppinut projektin aikana.
+						<ul>
+						<li> käyttämään scriptableobjecteja</li>
+						<li> Luomaan omiin tarkoituksiini sopivia työkaluja</li>
+						<li> Etätyöskentelyn sujuvoittamisen</li>
+						<li> prefabejen hyödyllisyyden</li>
+						<li> animaattorin käytön</li>
+						<li> Inverse kinematicsin käytön</li>
+						<li> Järkevämpää koodaamista c# kielellä</li>
+						<li> unityn käyttöliittymän paremmin</li>
+						</ul>
+						</p>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Kokonaisuudet -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Kokonaisuudet</h2>
+
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p> Tärkeimmät tekemäni toiminnallisuudet projektin aikana olivat:
+						<ul>
+						<li> Vuoropohjainen taistelu</li>
+						<li> Skillien teko työkalu</li>
+						</ul>
+
+						</p>
+						Seuraavaksi näette miten nämä kyseiset kokonaisuudet toimivat, kuinka ne on tehty ja mitä haasteita tuli vastaan matkan varrella.
+						<p>
+						
+						</p>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Vuoropohjainen taistelu -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Vuoropohjainen taistelu</h2>
+
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p> Vuoropohjainen taistelu oli näistä suurin osa alue. Aluksi kun lähdin miettimään miten taistelu kannattaisi toteuttaa, pilkoin taistelun pienempiin osasiin,
+						alapuolella näette osat.
+						<ul>
+						<li> taistelun ui elementit</li>
+							<ul>
+								<li>skillivalintapaneeli</li>
+								<li>pelaajan hpbaari</li>
+								<li>entiteetin hpbaari</li>
+								<li>vihollisen hpbaari</li>
+							</ul>
+						<li> taistelijoiden luonti kentälle</li>
+						<li> hyökkäyskohteen valitseminen</li>
+						<li> Hyökkäys</li>
+						<li> Skillien käyttö</li>
+						<li> vuorojärjestys</li>
+						<li> animaatiot taistelussa</li>
+						<li> efektit taistelussa</li>
+						</ul>
+
+						</p>
+						<header>
+						<h3>Haasteet</h3>
+
+						</header>
+						<p>
+						Haastavinta oli se, että oli unitystä vain vähän kokemusta ja heti piti alkaa koodaamaan monimutkaista taistelu systeemiä, alussa meinasi mennä sormi suuhun, mutta kyllä
+						 se siitä lähti rullaamaan.
+						Tämän koko kokonaisuuden luonti ei mennyt ihan putkeen, vaan aloitin luomaan taistelusysteemiä ilman, että miettisin millä tavalla se olisi järkevä koodata ja kun olin muutaman
+						viikon koodannut, tajusin miten huonoa ja epäselkeää koodi oli, joten uudelleen kirjoitin koko koodin alusta asti. Molemmat alla olevat koodit järjestävät taisteiljat hyökkäys järjestykseen.
+						Laitan tähän pätkä uudesta ja pätkän vanhasta koodista.
+						</p>
+						<h4>Vanhakoodi</h4>
+						<pre><code class="csharp">
+		 void BattleOrder()
+    {
+        int startStatus = 0;
+        //looppaa läpi vihujen statsit
+        for (int i = 0; i < enemyArray.GetLength(0) - 1; i++)
+        {
+            int position = enemyCounter;
+            //looppaa läpi vihuun verrattavien vihujen statsit
+            for (int h = 0; h < enemyArray.GetLength(0) - 1; h++)
+            {
+                //tapahtuu asioita jos vihu ei vertaa statseja itseensä
+                if (enemyArray[i, 0] != enemyArray[h, 0] && enemyArray[h, 1] != 0 && enemyArray[i, 1] != 0)
+                {
+                    //katsotaan mitä statsia verrataan
+                    startStatus = 0;
+                    if (enemyArray[i, 1] == enemyArray[h, 1])
+                    {
+                        startStatus = 1;
+                        if (enemyArray[i, 2] == enemyArray[h, 2])
+                        {
+                            startStatus = 2;
+                            if (enemyArray[i, 3] == enemyArray[h, 3])
+                            {
+                                startStatus = 3;
+                            }
+                        }
+                    }
+
+                    // verrataan statseja
+                    if (startStatus == 0)
+                    {
+                        // jos suurenpi speed sijoitus nousee yhdellä
+                        if (enemyArray[i, 1] > enemyArray[h, 1])
+                        {
+                            position -= 1;
+                        }
+                    }
+
+                    if (startStatus == 1)
+                    {
+                        // jos suurenpi accurasy sijoitus nousee yhdellä
+                        if (enemyArray[i, 2] > enemyArray[h, 2])
+                        {
+                            position -= 1;
+                        }
+                    }
+
+                    if (startStatus == 2)
+                    {
+                        // jos suurenpi hp sijoitus nousee yhdellä
+                        if (enemyArray[i, 3] > enemyArray[h, 3])
+                        {
+                            position -= 1;
+                        }
+                    }
+
+                    if (startStatus == 3)
+                    {
+
+                    }
+
+                }
+
+            }
+            //lisätään sijoitus muistiin arrayhyn
+            enemyArray[i, 9] = position;
+            if (enemyArray[i, 1] != 0)
+            {
+                Debug.Log("vihu " + enemyArray[i, 0] + " sija " + enemyArray[i, 9] + " speedi " + enemyArray[i, 1] + " damage " + enemyArray[i, 4]);
+            }
+        }
+
+        //Debug.Log(startStatus);
+        //Debug.Log("nopein vihu oli vihu" + vihuID);
+
+    }
+						</code></pre>
+						<br>
+						<h4>uusikoodi</h4>
+						<pre><code class="csharp">
+		public int CompareTo(FighterStat other)
+    {
+        //vertaile järjestyksessä spd->acc->hp->vihollinen vai ei. eli jos arvo on sama käytä seuraavaa vertausta.
+        if (SPD.Current > other.SPD.Current)
+        {
+            return -1;
+        }
+        if (SPD.Current < other.SPD.Current)
+        {
+            return 1;
+        }
+        if (ACC.Current > other.ACC.Current)
+        {
+            return -1;
+        }
+        if (ACC.Current < other.ACC.Current)
+        {
+            return 1;
+        }
+        if (HP.Current > other.HP.Current)
+        {
+            return -1;
+        }
+        if (HP.Current < other.HP.Current)
+        {
+            return 1;
+        }
+        if (fighterType == FighterType.Enemy)
+        {
+            return -1;
+        }
+        if (fighterType != FighterType.Enemy)
+        {
+            return 1;
+        }
+        return 0; //Ei palauta ikinä nollaa
+    }
+
+
+	 Fighters.Sort();
+						</code></pre>
+						<br>
+						<h3>
+						Seuraavaksi käymme läpi tarkemmin osan näistä pilkotuista osa-aluesta.
+						</h3>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Taistelijoiden luonti -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h3>Taistelijoiden luonti</h3>
+					</header>
+					<footer>
+					<div class="vasen">
+						<p> Näytän tässä koodia vain vihollisien luonnista pelikentälle, koska se on monimutkaisin noista taiselijoiden luonti jutuista.
+						 Ensin haetaan tieto montako vihollista luodaan sitten laitetan ne kentälle määrättyyn pisteeseen joka toinen vaemmalle ja joka toinen oikealle puolelle
+						 niin että vihollisista tulee rivi lopuksi haetaan vihollisen statsit.
+						</p>
+						<br>
+						<pre><code class="csharp">
+void PrepareEnemies()
+    {
+        int odd = 0;
+        int even = 0;
+        var offset = new Vector3(0,0,0);
+        // Katsotaan kentälle valitut taisteliat listan pituus ja tehdään niin mota taistelijaa kun sinne on määritetty
+        for (int i = 0; i < (selectFighter.EnemyFighter.Count); i++)
+        {
+
+            // luodaan taistelija määritetään sijainti annetaan statsit tallennetaan taistelija enemyfighter taulukkoon
+            var newfighter = selectFighter.EnemyFighter[i];
+            if (i == 0){ offset = new Vector3(0,0,0);}
+            var createFighter = Instantiate(objFighters, EnemyPosition.position + offset, Quaternion.identity, transform);
+            Fighter enemyFighter = createFighter.GetComponent<Fighter>();
+            enemyFighter.Stats = newfighter;
+            enemyFighter.Wakeup();
+
+            EnemyTeam.Add(enemyFighter);
+          
+            // luodaan taistelijat siten että joka toinen vasemmalle puolelle ja joka toinen oikealle
+            if (IsOdd(i)){
+                odd += 1;
+                offset = new Vector3(0,0,1*odd);
+            }else{
+                even += 1;
+            offset = new Vector3(0,0,-1*even);
+            }
+            
+        }
+    }
+		</code></pre>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Hyökkäyskohteen valitseminen -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h3>Hyökkäyskohteen valitseminen</h3>
+					</header>
+					<footer>
+					<div class="vasen">
+						<p> Hyökkäyskohteen valitsemisessa katsotaan onko hiiri vihollisobectin päällä, laitetaan nuoli vihollis objectin päälle ja asetetaan se aktiiviseksi.
+						 Jos viedään hiiri pois vihollisobectin päältä asetetaan nuoli pois käytöst
+						</p>
+						<br>
+						<pre><code class="csharp">
+ //Hyökkäyskohteen valitseminen
+
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //katsoo osuuko hiiri mihinkään
+        if (Physics.Raycast(ray, out hit))
+        {
+            //tsekkaa mistä vihusta painetaan jos jokin skilli on valittu
+            //Canshoot on true sillon kun on valittu aseskilli
+		//jos panoksia on jäljellä ja vuoroa ei ole käynnissä muuttaa targein kohteeksi mihin hiiri koskettaa ja siirtää nuolen targetin päälle
+            if (bullet < 1 && CanShoot == true && turnHasStarted == false)
+            {
+                target = hit.collider.GetComponent<Fighter>();
+
+                if (target is object && target.isActiveAndEnabled)
+                {
+                    if (target.Stats.fighterType == FighterType.Enemy)
+                    {
+                        Arrow.SetActive(true);
+                        Arrow.transform.position = target.transform.position;
+                        Arrow.transform.localPosition += Offset;
+                    }
+
+
+                    if ((Input.GetMouseButtonDown(0) && turnHasStarted == false))
+                    {
+                        turnHasStarted = true;
+                    }
+                }
+				//jos hiiri ei kosketa vihollisiin niin laitetaan nuoli pois näkyvistä
+                else { Arrow.SetActive(false); }
+            }
+            else { Arrow.SetActive(false); }
+        }
+        else { Arrow.SetActive(false); }
+		</code></pre>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+
+			<!-- Hyökkäys -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h3>Hyökkäys</h3>
+					</header>
+					<footer>
+					<div class="vasen">
+						<p> Hykkäyksessä aluksi pitää katsoa kuka taistelijoista on tehnyt vuoronsa ja kuka ei. Jos kaikki taistelijat on käyty läpi ja kaikki ovat tehneet vuoronsa, 
+						käytetyt vuorot laitetaan käyttämättömiksi. Jos listasta löytii taistelija joka ei ole tehnyt vuoroaan ja on vihollinen. taistelija tekee skillin.
+						Näytän vain vihollisen hyökkäyksen
+						koska se on monimutkaisempi, mutta pelaajan hyökkäykseen sen verran, että jos turnHasStarted == false ja skilli ja targetti on valittu pelaaja tekee skillin.
+						</p>
+						<br>
+						<pre><code class="csharp">
+void EnemyAttack()
+    {
+        int error = 0;
+        //luuppaa läpi kaikki vihut
+        for (int i = 0; i < Fighters.Count; i++)
+        {
+            error += 1;
+            //jos luuppi jumittuu lähtee pois enemyattackista
+            if (error > 200)
+            {
+                Debug.Log("tuli errori");
+                turnHasStarted = false;
+                return;
+            }
+            //jos pellaaja on kuollut lähtee pois enemy attackista
+            if (playerHealtBar.value < 1)
+            {
+                turnHasStarted = false;
+                return;
+            }
+            //jos käytävä taistelija on pelaaja ja pelaajan vuoroa ei ole käytetty lähtee pois sciptistä
+            if (Fighters[i] != FighterType.Enemy && Fighters[i].TURNUSED == false)
+            {
+                //pysäyttää vuoron
+                turnHasStarted = false;
+
+                //katsotaan mitkä paneelit pitää olla avonaisena
+                if (Fighters[i] == FighterType.Entity)
+                {
+                    CanShoot = false;
+                    menuClearSelected.Activepanel(2);
+                    menuClearSelected.ClearSelectAndPanel();
+                }
+                else
+                {
+                    CanShoot = false;
+                    menuClearSelected.Activepanel(0);
+                    menuClearSelected.ClearSelectAndPanel();
+                }
+                return;
+            }
+            
+            // jos vihun vuoroa ei ole käytetty niin tekee skillin, laitta vuoron käytetyksi ja aloittaa luupin alusta
+           if (Fighters[i].TURNUSED == false)
+            {
+                int selectPlayer = Random.Range(0, PlayerTeam.Count);
+                Skill.DoSkill(Fighters[i], PlayerTeam[selectPlayer]);
+                Fighters[i].TURNUSED = true;
+
+                i = -1;
+            }
+
+
+            if (i + 1 >= Fighters.Count) //jos ollaan listan lopussa aloitetaan lista alusta
+            {
+                i = -1;
+                Debug.Log("ERÄ PÄÄTTY");
+                
+                //jos kaikki taistelijat ovat käyneet vuoronsa 
+                for (int h = 0; h < Fighters.Count; h++)
+                {
+                    if (Fighters[h].TURNUSED == false){break;}
+                    // jos päästään luuppi loppuun resetoidaan vuorot
+                    if (h >= Fighters.Count - 1){
+                    for (int x = 0; x < Fighters.Count; x++)
+                    {
+                        Fighters[x].TURNUSED = false;
+                            Debug.Log("Vuorojen resetointi");
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+		</code></pre>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Skillien toiminnallisuus -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h3>Skillien toiminnallisuus</h3>
+					</header>
+					<footer>
+					<div class="vasen">
+						<p>
+						Skillit jäivät vielä hieman kesken, koska aluksi kovakoodasin ne sisälle koodiin mutta sitten mietimme, että olisi hyvä jotta olisi helppo luoda skillejä ilman että koskee koodiin.
+						kaikki kaavat mitkä näkyvät koodissa tarkoituksen oli vaihtaa skilli editorista tuleviin kaavoihin mutta, aika loppui kesken. Tällä hetkellä 
+						koodissa lasketaan osumisen,criticaldamagen, damagen kaava ja tallentaa värit sun muut jota käytetään damagetextin luonnissa.
+
+						</p>
+						<br>
+						<pre><code class="csharp">
+public static bool DoSkill(Fighter user, Fighter other)
+    {
+        float usedamage;
+        bool hit;
+        bool crit;
+        //etsitään hyökkääjän animaattori
+        animator = user.GetComponent<Animator>();
+        //Damage kaava
+        usedamage = user.Stats.DMG.Current - other.Stats.ARM.Current;
+        //Osumisen kaava
+        hit = 100 - (100 - user.Stats.ACC.Current - (other.Stats.SPD.Current / (other.Stats.ARM.Current / 2))) > Random.Range(0, 101);
+        //Critical prosentti
+        crit = (-85 + user.Stats.ACC.Current + user.Stats.SPD.Current) / 2.5f > Random.Range(0, 101);
+        //hitText = new TextMesh();
+        //return true;
+        if (user.Stats.ability.Count <= 0)
+        {
+            return false;
+        }
+        for (int i = 0; i < user.Stats.ability[0].howManyTurn; i++)
+        {
+            //lasketaan osumaprosentti
+            if (hit)
+            {
+                //kun tiedetää osuuko lasketaan onko critical hit
+                if (crit)
+                {
+                    hitEffect.text = Mathf.RoundToInt(usedamage * 1.5f) + "!";
+                    hitEffect.color = Color.red;
+                    hitEffect.fontSize = 34;
+                }
+                else
+                {
+                    hitEffect.text = Mathf.RoundToInt(usedamage) + "";
+                    hitEffect.color = Color.yellow;
+                }
+                other.Stats.HP.Current -= Mathf.RoundToInt(usedamage);
+                hitEffect.hit = true;
+            }
+            else
+            {
+                hitEffect.text = "Miss";
+                hitEffect.hit = false;
+            }
+            //if (user.Stats.Ammo < 1) { break; }
+            //user.Stats.Ammo -= 1;
+            Debug.Log("skilllss" + i);
+            SkillAnimationPool.Animationlist.Add(new SkillAnimationStorage(user, other, "Gunplay", hitEffect, user.ID, "shoot"));
+
+            //lopettaa luupin jos pelaaja on jo kuollut
+            if (other.Stats.HP.Current <= 0) { break; }
+        }
+        return true;
+    }
+}
+		</code></pre>
+					</div>
+					</footer>
+				</div>
+			</article>
+
+
+			<!-- skillityökalu -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Skillienteko työkalu</h2>
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p>
+						Skillityökalun tarkoituksena on helpottaa skillien luontia peliin, siten että koodiin ei tarvitsisi koskea ollenkaan. Ideoin skillityökalun siten että, siihen luodaan kaavoja taistelijoiden
+						 statsien avulla. Kaavoista tulee tulos jota voi käyttää damagentekemiseen, healaamiseen... käytännössä muuttamaan kaikkia mahdollisia taistelijoiden statseja, skillityökaluun kuuluu editor osio,
+						 matemaattinen osio ja varastointi osio. Skilleditor työkalu ilmoittaa jos teet ikuisesti looppaavan kaavan.
+						Skillityökalu jäi hieman kesken, koska aika loppui
+						, mutta näytän mitä sain aikaan sen saralla, aluksi kuitenkin käymme läpi suurimmat haasteet.
+						</p>
+						<header>
+						<h3>Haasteet</h3>
+							Haasteena oli saada skillityökalusta sellainen, että sillä pystyy luomaan mahdollisimman monenlaisia skillejä. kaavojen luominen ja yhdistäminen oli myös haasteelista.
+							 Scribtableobjectien käyttö oli aluksi hieman hankalaa vaikka yksinkertainen asia onkin, koska en ollut aikasemmin käyttäny niitä.
+						</header>
+                        <img src="../../images/skilleditor.png" alt="skilleditor" width= "100%">
+						<p>
+						
+						</p>
+
+					</div>
+					</footer>
+				</div>
+			</article>
+
+				<!-- Editor osuus -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h3>Skillienluonti työkalu editor osuus</h3>
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p>
+						    Katsotaan Skillienluonti editorin mielenkiintoisin osuus eli kaavojen luonti. Kaavaan voi laittaa floatin, taisteljan statsin tai toisen kaavan
+
+						</p>
+					
+							<pre><code class="csharp">
+		  GUILayout.BeginHorizontal();
+          //kaavojen lisääminen lisäämällä listaan matikkaobejctin
+        if (GUILayout.Button("Lisää kaava")) { math.Add(new MathObject()); math[math.Count - 1].name += math.Count + ""; }
+        if (GUILayout.Button("poista kaava")) { if (math.Count > 0) { math.RemoveAt(math.Count - 1); } }
+        GUILayout.EndHorizontal();
+
+        // vasen ja oikea arvo ja operaattori
+        addMathA();
+        addOperator();
+        addMathB();
+
+        GUILayout.BeginArea(new Rect(10, 305, 505, 505));
+
+        // haetaan SeemathFormula() funktio, joka palauttaa stingin joka helpottaa kaavojen lukemista
+        for (int i = 0; i < math.Count; i++)
+        {
+            GUILayout.Label(math[i].name + ":  " + math[i].SeemathFormula(), EditorStyles.boldLabel);
+            math[i].error = 0;
+        }
+        GUILayout.EndArea();
+    }
+
+
+
+    void addMathA()
+    {
+        for (int i = 0; i < math.Count; i++)
+        {
+            
+            GUILayout.BeginArea(new Rect(185, (i * mathspace) + 22, width, 305));
+
+            GUILayout.Label(math[i].name, EditorStyles.boldLabel);
+
+             //katsotaan mitä tyyppiä arvo on ja näytetäään sen mukainen fieldi
+
+            math[i].aValueType = (ValueType)EditorGUILayout.EnumPopup("", math[i].aValueType);
+            
+            if (math[i].aValueType == ValueType.Float)
+            {
+                math[i].aFloatValue = EditorGUILayout.FloatField("", math[i].aFloatValue);
+            }
+            else if (math[i].aValueType == ValueType.Other || math[i].aValueType == ValueType.User)
+            {
+                math[i].aValue = (FighterValue)EditorGUILayout.EnumPopup("", math[i].aValue);
+            }
+            else
+            {
+                //palauttaa indexin mistä solusta löytyy aCalculationin mathobject
+                int index = math.IndexOf(math[i].aCalculation);
+                //tekee string arrayn mathobjectin nimistä
+                string[] mathstring = math.Select(x => x.name).ToArray();
+
+                //luo listan
+                if (index != -1)
+                {
+                    index = EditorGUILayout.Popup(index, mathstring);
+                }
+                else
+                {
+                    index = 0;
+                }
+                math[i].aCalculation = math[index];
+
+            }
+            GUILayout.EndArea();
+        }
+    }
+    void addMathB()
+    {
+
+        for (int i = 0; i < math.Count; i++)
+        {
+            GUILayout.BeginArea(new Rect(185 + (width * 2), (i * mathspace) + 20, width, 305));
+
+            GUILayout.Label(" ");
+
+                //katsotaan mitä tyyppiä arvo on ja näytetäään sen mukainen fieldi
+
+            math[i].bValueType = (ValueType)EditorGUILayout.EnumPopup("", math[i].bValueType);
+
+            if (math[i].bValueType == ValueType.Float)
+            {
+                math[i].bFloatValue = EditorGUILayout.FloatField("", math[i].bFloatValue);
+            }
+            else if (math[i].bValueType == ValueType.Other || math[i].bValueType == ValueType.User)
+            {
+                math[i].bValue = (FighterValue)EditorGUILayout.EnumPopup("", math[i].bValue);
+            }
+            else
+            {
+             //palauttaa indexin mistä solusta löytyy aCalculationin mathobject
+                int index = math.IndexOf(math[i].bCalculation);
+
+                 //tekee string arrayn mathobjectin nimistä
+                string[] mathstring = math.Select(x => x.name).ToArray();
+
+                //luo listan
+                if (index != -1)
+                {
+                    index = EditorGUILayout.Popup(index, mathstring);
+                }
+                else
+                {
+                    index = 0;
+                }
+                math[i].bCalculation = math[index];
+
+            }
+            GUILayout.EndArea();
+        }
+    }
+
+    string[,] operatorSchanging = new string[,] { { "add", "+" }, { "substract", "-" }, { "multiply", "*" }, { "divide", "/" } };
+
+
+     void addOperator()
+    {
+        for (int i = 0; i < math.Count; i++)
+        {
+            GUILayout.BeginArea(new Rect(185 + (width), (i * mathspace) + 20, width, 305));
+            GUILayout.Label(" ");
+            //käyttää operaattoreista tehtyä enumia
+            math[i].op = (Operator)EditorGUILayout.EnumPopup("", math[i].op);
+            for (int h = 0; h < operatorSchanging.Length; h++)
+            {
+            //nättää operaattorien nimien sijasta operaatorien merkkejä
+                if(operatorSchanging[h,0] == math[i].op.ToString())
+                {
+                    math[i].operatorSchanging = operatorSchanging[h, 1];
+                     GUILayout.Label("        " + math[i].operatorSchanging, EditorStyles.boldLabel);
+                    break;
+                }
+                
+            }
+           
+            GUILayout.EndArea();
+        }
+    }
+
+		</code></pre>
+
+					</div>
+					</footer>
+				</div>
+			</article>
+
+
+            <!-- matikka osuus -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h3>Skillityökalun Kaava string</h3>
+					</header>
+					
+					<footer>
+					<div class="vasen">
+						<p>
+						   Katsotaan funktiota, joka tekee stringin mikä helpottaa kaavan hahmottamista.
+
+						</p>
+					
+							<pre><code class="csharp">
+		                     //tätä funktiota käytetään lasku stringin luomisessa skillieditoriin
+    public void aANDbmath(ValueType valueT, FighterValue value, MathObject calclulation, float floatvalue)
+    {
+        //katsoo onko valuetyyppi other tai user ja lisää stringgiin sen mukaiset arvot
+        if (valueT == ValueType.Other || valueT == ValueType.User)
+        {
+            mathFormula += valueT + "";
+            mathFormula += "." + value;
+        }
+        
+        else if (valueT == ValueType.Float)
+        {
+            mathFormula += floatvalue + "";
+        }
+        else
+        {
+            //yhdistellään matikkaobectien kaavoja
+            if (calclulation != this && calclulation != null)
+            {
+                mathFormula += "(" + calclulation.SeemathFormula() + ")";
+            }
+        }
+    }
+    //tätä funktiota käytetään lasku stringin luomisessa skillieditoriin
+    public string SeemathFormula()
+    {
+            error += 1;
+            if (error > 50) { return "Ikuinen looppi"; }
+            mathFormula = "";
+            // lisätään stringgiin vasemman puolen ja oikean puolen laskut
+            aANDbmath(aValueType, aValue, aCalculation, aFloatValue);
+            mathFormula += " " + operatorSchanging + " ";
+            aANDbmath(bValueType, bValue, bCalculation, bFloatValue);
+            if (mathFormula != "")
+            {
+                Stringmath = mathFormula;
+            }
+      
+        return Stringmath;
+    }
+
+		</code></pre>
+
+					</div>
+					</footer>
+				</div>
+			</article>
+
+			<!-- Pohdinta -->
+			<article id="work" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Pohdinta</h2>
+					</header>
+					<footer>
+					<div class="vasen">
+						<p> ticorporate 7 oli erittäin mielenkiintonen puolenvuoden rutistus, tekemällä oppii tavataan sanoa ja sitä tämä kurssi toisaankin oli. Kurssi oli hyvä tekeville ihmisille kuten minulle, joka tykkää enemmän tehdä kuin kuunnella pitkiä luentoja. 
+						kurssi antoi hyvät valmiudet työpaikkoihin, joissa käytetään scrum menetelmää.
+						</p>
+						Tykkäsin miten ticorporate 7 ei ohjannut liikaa opiskelijaa vaan kaikille oli oma vastuunsa tekemisistään, kurssi oli kuin työpaikka simulaatio. Kaikenkaikkiaan jäi ihan hyvä maku kurssista ja projektistamme.
+						<p>
+						
+						</p>
+					</div>
+					</footer>
+				</div>
+			</article>
+		
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
